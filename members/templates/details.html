@@ -1,14 +1,32 @@
+
+{% load static %}
 <!DOCTYPE html>
 <html>
-
+<head>
+    <link rel="stylesheet" href="{% static 'myfirst.css' %}">
+</head>
 <body>
+    <nav class="navbar">
+        <h1>welcome to my website</h1>
+    </nav>
 
-<h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+    <div class="box">
+        <img src="{%static 'imgs/49.png'%}" alt="">
+            <div>
+                <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+                
+                <p>Phone: {{ mymember.phone }}</p>
+                <p>Member since: {{ mymember.joined_date }}</p>
+
+                <p>Back to <a href="/members">Members</a></p>
+
+                <br>  
+             </div>
   
-<p>Phone: {{ mymember.phone }}</p>
-<p>Member since: {{ mymember.joined_date }}</p>
+    </div>
+  
 
-<p>Back to <a href="/members">Members</a></p>
+
 
 </body>
 </html>

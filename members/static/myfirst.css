@@ -1,0 +1,45 @@
+body{
+    background-color: aliceblue;
+}
+
+ul li{
+    padding: 12px;
+    font-size: 30px;
+    list-style-type: none;
+  }
+  ul a{
+    background-color: lightskyblue;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15%;
+  }
+  li img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+  img{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    border-radius: 50%;
+  }
+  .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar{
+    background-color: rgb(65, 42, 165);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: aliceblue;
+  }
+  .navbar h1{
+    padding: 10px;
+  }

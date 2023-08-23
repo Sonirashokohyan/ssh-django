@@ -1,20 +1,8 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      ul li{
-        padding: 12px;
-        font-size: 30px;
-      }
-      ul a{
-        background-color: lightskyblue;
-        color: aliceblue;
-        text-decoration: none;
-        padding: 5px;
-        margin: 10px;
-        border-radius: 15%;
-      }
-    </style>
+    <link rel="stylesheet" href="{% static 'myfirst.css' %}">
   </head>
 <body>
 
@@ -22,7 +10,7 @@
   
 <ul>
   {% for x in mymembers %}
-    <li>{{ x.firstname }} {{ x.lastname }} <a href="details/{{ x.id }}">view</a></li>
+    <li> <span><img src="{%static 'imgs/49.png'%}" alt=""></span>{{ x.firstname }} {{ x.lastname }} <a href="details/{{ x.id }}">view</a></li>
   {% endfor %}
 </ul>
 
