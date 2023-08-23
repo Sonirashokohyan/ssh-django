@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ul li{
+        padding: 12px;
+        font-size: 30px;
+      }
+      ul a{
+        background-color: lightskyblue;
+        color: aliceblue;
+        text-decoration: none;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 15%;
+      }
+    </style>
+  </head>
+<body>
+
+<h1>Members</h1>
+  
+<ul>
+  {% for x in mymembers %}
+    <li>{{ x.firstname }} {{ x.lastname }} <a href="details/{{ x.id }}">view</a></li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
