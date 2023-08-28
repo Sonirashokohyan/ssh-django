@@ -1,15 +1,13 @@
-
+{% extends "master.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="{% static 'myfirst.css' %}">
-</head>
-<body>
-    <nav class="navbar">
-        <h1>welcome to my website</h1>
-    </nav>
 
+{% block title %}
+  My Tennis Club - List of all members
+{% endblock %}
+
+
+
+{% block content %}
     <div class="box">
         <img src="{%static 'imgs/49.png'%}" alt="">
             <div>
@@ -24,9 +22,4 @@
              </div>
   
     </div>
-  
-
-
-
-</body>
-</html>
+{% endblock %}
